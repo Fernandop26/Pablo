@@ -1,0 +1,28 @@
+#include <iostream>
+#include <stdlib.h>
+
+using namespace std;
+int main()
+{
+
+	float num, sum, comp;
+	sum = 0;
+
+	num = 1;
+	for (comp =0; num!=0; comp++)
+	{
+		cin >> num;
+		sum = num + sum;
+	}
+
+	sum = (sum / (comp - 1));
+
+	if (comp == 1) 
+	{
+		cout << "Error: La sequencia es buida. No es pot calcular la mitjana." << endl;
+	}
+	else
+	cout << "Mitjana dels nombres de la sequencia: " << sum << endl;
+
+	return 0;
+}
