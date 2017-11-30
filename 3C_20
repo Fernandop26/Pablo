@@ -1,0 +1,35 @@
+#include <iostream>
+#include <stdlib.h>
+
+using namespace std;
+int main()
+{
+	int num, min, max, comp, num1;
+	max = 0;
+	comp = 0;
+	num1 = 0;
+	while ((comp <= 10) && (num1 >= 0))
+	{
+		cin >> num1;
+		comp++;
+		if (comp == 1)
+			num = num1;
+
+		if ((num1 > max) && (num1 > 0))
+			max = num1;
+
+		if ((num1 < num) && (num > 0) && (num1>0))
+
+			num = num1;
+
+		
+			
+		}
+	if ((num1 < 0) && (comp == 1))
+		cout << "No hi ha nombres a la sequencia" << endl;
+	else
+	{
+		cout << "Maxim: " << max << " - Minim : " << num << endl;
+	}
+		return 0;
+}
